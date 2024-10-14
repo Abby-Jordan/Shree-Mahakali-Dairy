@@ -18,6 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow header items to wrap on smaller screens */
 }
 
 .header-content {
@@ -38,19 +39,19 @@ header {
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Adjust font size for better responsiveness */
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 header p {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Reduce font size for better fit */
     line-height: 1.5;
     margin: 10px 0;
 }
 
 header p strong {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Adjust strong text font size */
 }
 
 .product-list {
@@ -74,6 +75,11 @@ header p strong {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.3s; /* Add a transition effect */
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .product-item img {
@@ -112,3 +118,35 @@ footer p {
     margin: 0;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Smaller heading for tablets and phones */
+    }
+
+    header p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
+    }
+
+    .product-item {
+        max-width: 90%; /* Allow more width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* Smaller heading for mobile phones */
+    }
+
+    header p {
+        font-size: 0.8rem; /* Further adjust paragraph font size */
+    }
+
+    .product-list {
+        grid-template-columns: 1fr; /* 1 item per row on mobile screens */
+    }
+}
