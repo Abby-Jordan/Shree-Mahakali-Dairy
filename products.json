@@ -16,5 +16,23 @@
         "description": "Sweet and juicy classic treat.",
         "price": "₹320/kg",
         "image": "images/gulabjamun.jpg"
+    },
+    {
+        "name": "Barfi",
+        "description": "A rich and creamy milk-based sweet, often flavored with cardamom or nuts.",
+        "price": "₹560/kg",
+        "image": "images/barfi.webp"
+    },
+    {
+        "name": "Curd",
+        "description": "A refreshing, tangy dairy product made by fermenting milk.",
+        "price": "₹120/kg",
+        "image": "images/curd.webp"
+    },
+    {
+        "name": "Shrikhand",
+        "description": "A smooth, thick yogurt dessert infused with sugar, saffron, and cardamom.",
+        "price": "₹320/kg",
+        "image": "images/shrikhand.jpg"
     }
 ]
