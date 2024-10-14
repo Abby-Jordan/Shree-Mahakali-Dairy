@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shree Mahakali Dairy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Shree Mahakali Dairy</h1>
+        <p>Experience the finest in traditional Indian sweets, fresh dairy products, and savory namkeen at Shree Mahakali Dairy.</p>
+            <p> Crafted with love, our treats bring you the authentic flavors of India, perfect for any occasion.</p>
+    </header>
+
+    <section  class="product-list" id="product-list">
+    </section>
+
+    <script>
+        fetch('products.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(products => {
+                const productList = document.getElementById('product-list');
+                products.forEach(product => {
+                    // Create product item
+                    const productItem = document.createElement('div');
+                    productItem.className = 'product-item';
+                    productItem.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}">
+                        <h2>${product.name}</h2>
+                        <p>${product.description}</p>
+                        <p class="price">Price: ${product.price}</p>
+                    `;
+                    productList.appendChild(productItem);
+                });
+            })
+            .catch(error => console.error('Error fetching product data:', error));
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Shree Mahakali Dairy. All rights reserved.</p>
+    </footer>
+</body>
+</html>

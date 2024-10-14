@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Kalakand",
+        "description": "A delightful milk-based sweet.",
+        "price": "₹560/kg",
+        "image": "images/milkcake.webp"
+    },
+    {
+        "name": "Paneer",
+        "description": "Fresh, soft paneer for your savory dishes.",
+        "price": "₹480/kg",
+        "image": "images/paneer.jpeg"
+    },
+    {
+        "name": "Gulab Jamun",
+        "description": "Sweet and juicy classic treat.",
+        "price": "₹320/kg",
+        "image": "images/gulabjamun.jpg"
+    }
+]
