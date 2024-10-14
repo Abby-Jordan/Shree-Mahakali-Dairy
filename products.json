@@ -3,36 +3,42 @@
         "name": "Kalakand",
         "description": "A delightful milk-based sweet.",
         "price": "₹560/kg",
-        "image": "images/milkcake.webp"
+        "image": "images/milkcake.webp",
+        "category": "Sweets"
     },
     {
         "name": "Paneer",
         "description": "Fresh, soft paneer for your savory dishes.",
         "price": "₹480/kg",
-        "image": "images/paneer.jpeg"
+        "image": "images/paneer.jpeg",
+        "category": "Dairy"
     },
     {
         "name": "Gulab Jamun",
         "description": "Sweet and juicy classic treat.",
         "price": "₹320/kg",
-        "image": "images/gulabjamun.jpg"
+        "image": "images/gulabjamun.jpg",
+        "category": "Sweets"
     },
     {
         "name": "Barfi",
         "description": "A rich and creamy milk-based sweet, often flavored with cardamom or nuts.",
         "price": "₹560/kg",
-        "image": "images/barfi.webp"
+        "image": "images/barfi.webp",
+        "category": "Sweets"
     },
     {
         "name": "Curd",
         "description": "A refreshing, tangy dairy product made by fermenting milk.",
         "price": "₹120/kg",
-        "image": "images/curd.webp"
+        "image": "images/curd.webp",
+        "category": "Dairy"
     },
     {
         "name": "Shrikhand",
         "description": "A smooth, thick yogurt dessert infused with sugar, saffron, and cardamom.",
         "price": "₹320/kg",
-        "image": "images/shrikhand.jpg"
+        "image": "images/shrikhand.jpg",
+        "category": "Sweets"
     }
 ]
